@@ -57,7 +57,7 @@ async function verifyFundMe(fundMeAddr,args){
     //run关键字 能让javascript运行命令行里的命令
     await hre.run("verify:verify", {
         address: fundMeAddr,
-        constructorArguments: [args],
+        constructorArguments: args,
       });
 }
 
